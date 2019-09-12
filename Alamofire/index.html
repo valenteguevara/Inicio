@@ -55,7 +55,7 @@
 		<header>
 			<div class="container-fluid">
 				<div class="header d-lg-flex justify-content-between align-items-center py-3 px-sm-3">
-				<!-- logo -->
+					<!-- logo -->
 					<div id="logo">
 						<h1><a href="../"><span class="fa fa-linode mr-2"></span>Guevara</a></h1>
 					</div>
@@ -67,8 +67,8 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li><a href="../">Inicio</a></li>
-								<li><a href="../Acerca-de/" >Acerca de</a></li>
-								<li><a href="#" class="active">Trabajos</a></li>
+								<li><a href="#" class="active">Acerca de</a></li>
+								<li><a href="../Tabajos/">Trabajos</a></li>
 								<li>
 									<!-- First Tier Drop Down -->
 									<label for="drop-2" class="toggle toogle-2">Lenguajes <span class="fa fa-angle-down" aria-hidden="true"></span>
@@ -89,7 +89,8 @@
 							</ul>
 						</nav>
 					</div>
-				<div class="d-flex mt-lg-1 mt-sm-2 mt-3 justify-content-center">
+					<!-- //nav -->
+					<div class="d-flex mt-lg-1 mt-sm-2 mt-3 justify-content-center">
 					<!-- download -->
 						<a class="dwn-w3ls btn" href="https://mx.linkedin.com/in/valente-guevara-l%C3%B3pez-648a72116" target="_blank">
 							<span class="fa fa-linkedin-square"></span>
@@ -105,157 +106,132 @@
 		<div class="banner_w3lspvt-2">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="../" class="font-weight-bold">Inicio</a></li>
-				<li class="breadcrumb-item" aria-current="page">Trabajos</li>
+				<li class="breadcrumb-item" aria-current="page">Acerca de</li>
 			</ol>
 		</div>
 		<!-- //banner -->
 	</div>
 	<!-- //main banner -->
 
+	<!-- about -->
 	<div class="about-inner py-5">
 		<div class="container pb-xl-5 pb-lg-3">
 			<div class="row py-xl-4">
-				<div class="col-lg-5 about-right-faq pr-5">
-					<h6>Creado por </h6>
-					<h3 class="mt-2 mb-3">Valente Guevara Lopez</h3>
-                    <p align="justify">Debe reconocer y dar crédito al autor original (<a href="../Acerca-de/">Valente Guevara López</a>).
-                    </p>
 				
-				</div>
-                	<!-- accordions -->
-                <div class="col-lg-7 welcome-right text-center mt-lg-0 mt-5">
-					<a href="https://www.freelancermap.com/freelancer-tips/es/11245-desmontamos-5-mitos-sobre-el-desarrollo-de-software-y-la-programaci-n" target="_blank"><img src="../images/Trabajos/trabajos.jpg" alt="" class="img-fluid" /></a>
-				</div>	
-    	<!-- faq -->
+	<!-- faq -->
 	<div class="about-inner py-5">
 		<div class="container pb-xl-5 pb-lg-3">
 
 			<ul class="accordion css-accordion mt-5">
 				<li class="accordion-item">
 					<input class="accordion-item-input" type="checkbox" name="accordion" id="item1" />
-					<label for="item1" class="accordion-item-hd">Arduino<span
+					<label for="item1" class="accordion-item-hd">CocoaPods<span
 						 class="accordion-item-hd-cta">&#9650;</span></label>
 					<div class="accordion-item-bd">
-						<p align="justify"> 
-                            Arduino es una compañía de desarrollo de software y hardware de fuente abierta, así como una comunidad internacional que diseña y manufactura placas de desarrollo de hardware para construir dispositivos digitales y dispositivos interactivos que puedan detectar y controlar objetos del mundo real. 
+						<p align="justify">
+                        pod 'SwiftyJSON' <br/>
+                            pod 'Alamofire', '~> 4.5' <br/>
+                              pod 'SQLite.swift'<br/>
+                        </p> <br/> <br/>
+                        <p>NUserDefault</p>
+                        	<p align="justify">
+                            <em> import Foundation <br/>
+                        class ATConstants { <br/>
+                            // MARK: Colors <br/>
+                            static let colorGreen = UIColor.hexStringToUIColor(hex: "#009999") <br/>
+                            // MARK: Keys <br/>
+                                static let keyDeviceLanguage = "deviceLanguage" <br/>
+                            }
+                            </em>
+                            <br/>
+                            Agregad datos
+                            
+                            
+                            <em>
+                             let defaults = UserDefaults.standard // Agregar datos a UserDefaults<br/>
+                                defaults.set("Español", forKey: ATConstants.keyDeviceLanguage)<br/>
+                            </em>
+                            Llamada al dato guadado <br/>
+                            
+                          <em>  let defaults = UserDefaults.standard<br/>
+                            let idioma = defaults.string(forKey: ATConstants.keyDeviceLanguage) ?? "" </em>
+                        
+                        
                         </p>
-                        <a href="https://lesmblog.wordpress.com/acerca-de/" class="btn button-style mt-md-5 mt-4">Leer más...</a>
 					</div>
 				</li>
-             <!--   <li class="accordion-item">
+				<li class="accordion-item">
 					<input class="accordion-item-input" type="checkbox" name="accordion" id="item2" />
-					<label for="item2" class="accordion-item-hd">Alamofire<span
-						 class="accordion-item-hd-cta">&#9650;</span></label>
+					<label for="item2" class="accordion-item-hd">Peticion<span class="accordion-item-hd-cta">&#9650;</span></label>
 					<div class="accordion-item-bd">
-                        <p align="justify">Es una biblioteca de redes HTTP basada en Swift para iOS y macOS. Proporciona una interfaz elegante en la parte superior de la pila de redes de la Fundation Apple que simplifica la comunicación Rest.</p>
-                    </div>
-                </li>
-                <li class="accordion-item">
-					<input class="accordion-item-input" type="checkbox" name="accordion" id="item3" />
-					<label for="item3" class="accordion-item-hd">Lottie<span
-						 class="accordion-item-hd-cta">&#9650;</span></label>
-					<div class="accordion-item-bd">
-                        <h3 class="mt-2 mb-3">¿Te imaginas tomar una animación creada por un diseñador y poder utilizarla?.</h3>
-                        <p align="justify">Lottie es una librería de animaciones creada por Airbnb para iOS y Android que se encarga de tomar animaciones de After Effect exportadas en JSON y renderizarla utilizando APIs de animación nativa en cada plataforma.</p><br/>
-                    <a href="../Swift/Lottie/" class="btn button-style mt-md-5 mt-4">Leer más...</a>
-                    </div>
-                </li> -->
+						<p align="justify">
+                            <em> 
+                                static func consultaMovServices(numcompany: String, employeeNumber: String, success:@escaping (_ response: Int)->(), failure:@escaping (_ response: Response)->()) { ///Inicio de Consulta Movimiento
+        let headers: HTTPHeaders = ["Content-Type": ATNetworkConstants.HContentType,
+                                    "Authorization": ATNetworkConstants.HAuthorization]
+        let parametersMov: [String: Any] = ["NumeroCompania": numcompany, "Empleado": employeeNumber, "ConsultaPrioridad": false]
+        Alamofire.request(ATNetworkConstants.Movimiento_URL, method: .post, parameters: parametersMov, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: {
+            
+            response in
+            let _response = Response()
+            if (response.result.error != nil || response.response?.statusCode != 200){
+                _response.status = .failure
+                _response.error = response.result.error as NSError?
+                failure(_response)
+            } else {
+                let userJsonMov = JSON(data: response.data!)
+                //print(".........consultaMovServices. userJsonMov= " + "\(userJsonMov)")
+                var jsonString = [String:String]()
+                var horaChecada = ""
+                var tipoChecada = ""
+                // var codeServer = ""
+                let defaults = UserDefaults.standard
+                if let codigoTxt = userJsonMov["Codigo"].string {
+                    UserDefaults.standard.set(codigoTxt, forKey: ATConstants.keyCodigo)
+                    // codeServer = codigoTxt
+                }
+                if let HoraChecada = userJsonMov["HoraChecada"].string {
+                    horaChecada = HoraChecada
+                }
+                if let TipoChecada = userJsonMov["TipoChecada"].string {
+                    tipoChecada = TipoChecada
+                }
+                jsonString ["tipoChecada"] = "\(tipoChecada)"
+                jsonString ["ultimaChecada"] = "\(horaChecada)"
+                var currentUser: ATUser
+                if let user = ATUtils.parseUserString(response: jsonString) {
+                    currentUser = user
+                    let encodedData = NSKeyedArchiver.archivedData(withRootObject: currentUser)
+                    defaults.set(encodedData, forKey: ATConstants.keyUser)
+                }
+                else {
+                    UserDefaults.standard.set("1", forKey: ATConstants.keyErrorjson)
+                }
+                _response.status = .success
+                _response.object = response.result.value as AnyObject?
+                success(_response.object!["res"] as? Int ?? 0)
+            }
+        })// Fin de Consulta Empleado
+    }
+                            
+                            
+                            </em>
+                        
+                        
+                        </p>
+					</div>
+				</li>
 			</ul>
 			<!-- //accordions -->
 		</div>
 	</div>
+                
 	<!-- //faq -->	
 			</div>
 		</div>
 	</div>
-	<div class="price-sec py-5">
-        <h3 class="tittle text-center font-weight-bold">Trayectoria Laboral</h3><br/>
-		<div class="container py-xl-5 py-lg-3">
-			<div class="inner_sec_info_w3_info mt-3">
-				<div class="row price-grid-main">
-					<div class="col-lg-3 col-sm-6 price-info">
-						<div class="prices p-4">
-							<div class="prices-top">
-								<h3 class="text-center text-wh rounded-circle"></h3>
-							</div>
-							<div class="prices-bottom text-center">
-								<div class="prices-h border-bottom p-4">
-									<h4 align="justify">Web Postgrado</h4>
-								</div>
-								<ul class="mt-4" align="justify">
-									<li>Publicación de Libros.</li>
-									<li>Tesis de: 
-                                        <ul>
-                                            <li>Doctorado</li>
-                                            <li>Maestría</li>
-                                            <li>Licenciatura</li>
-                                        </ul></li>
-								</ul>
-								<a href="#" class="btn button-style mt-4" >Ver más...</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6  price-info price-mkres-2">
-						<div class="prices p-4 active">
-							<div class="prices-top">
-								<h3 class="text-center text-wh rounded-circle"></h3>
-							</div>
-							<div class="prices-bottom text-center">
-								<div class="prices-h border-bottom p-4">
-									<h4 align="justify">Atension a Cliente</h4>
-								</div>
-								<ul class="mt-4" align="justify">
-									<li>Registro de equipos con fallas.</li>
-									<li>Generación de recibos PDF.</li>
-									<li>Seguimiento de estado de equipos.</li>
-								</ul>
-								<a href="https://www.grupoecom.mx" class="btn button-style mt-4" target="_blank">Ver más...</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6  price-info price-mkres">
-						<div class="prices p-4">
-							<div class="prices-top">
-								<h3 class="text-center text-wh rounded-circle"></h3>
-							</div>
-							<div class="prices-bottom text-center">
-								<div class="prices-h border-bottom p-4">
-									<h4 align="justify">Human WS</h4>
-								</div>
-								<ul class="mt-4" align="justify">
-									<li>Red social corporativa (Human WorkSocial).</li>
-									<li>Gestión de procesos de nóminas.</li>
-									<li>Recursos Humanos.</li>
-									<li>Administración de tiempos.</li>
-								</ul>
-								<a href="https://play.google.com/store/apps/details?id=com.vsm.humanapp&hl=es_419" class="btn button-style mt-4" target="_blank">Ver más...</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6  price-info price-mkres">
-						<div class="prices p-4 active">
-							<div class="prices-top">
-								<h3 class="text-center text-wh rounded-circle"></h3>
-							</div>
-							<div class="prices-bottom text-center">
-								<div class="prices-h border-bottom p-4">
-									<h4 align="justify">Human eTime</h4>
-								</div>
-								<ul class="mt-4" align="justify">
-									<li>Reemplaza el uso de Terminales de Checado (Proximidad, Huella digital, etc.).</li>
-									<li>Permite la creación de rutas con múltiples puntos de chequeo.</li>
-								</ul>
-								<a href="https://play.google.com/store/apps/details?id=com.venturessoft.human&hl=es_419" class="btn button-style mt-4" target="_blank">Ver más...</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	<!-- footer -->
+	<!-- //about -->
+    	<!-- footer -->
 	<footer class="bg-li py-5">
 		<div class="container py-xl-5 py-lg-3">
 			<!-- subscribe -->
@@ -304,7 +280,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- //copyright bottom -->
 </body>
 
 </html>
